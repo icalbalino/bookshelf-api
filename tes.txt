@@ -6,3 +6,5 @@ git commit -m 'test'
 git push origin master
 git clone <remote repository URL>
 git status
+
+npm init --y (json)
