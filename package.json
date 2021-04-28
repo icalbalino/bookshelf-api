@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/if0balino/Bookshelf-API/issues"
   },
-  "homepage": "https://github.com/if0balino/Bookshelf-API#readme"
+  "homepage": "https://github.com/if0balino/Bookshelf-API#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }

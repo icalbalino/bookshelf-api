@@ -8,3 +8,4 @@ git clone <remote repository URL>
 git status
 
 npm init --y (json)
+npm install nodemon --save-dev
