@@ -60,4 +60,25 @@ const addBookHandler = (request, h) => {
   }
 };
 
-module.exports = {addBookHandler};
+const getAllBooksHandler = () => ({
+//     if (books == null) {
+//         status: 'success',
+//         data: {
+//             books: [],
+//         }
+//     }
+//   status: 'success',
+//   data: {
+//     books: [
+//       {
+//         id: books.id,
+//         name: books.name,
+//         publisher: books.publisher,
+//       },
+
+  //     ],
+  //   },
+
+});
+
+module.exports = {addBookHandler, getAllBooksHandler};
