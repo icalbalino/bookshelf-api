@@ -1,5 +1,6 @@
+/* eslint-disable max-len */
 /* eslint-disable linebreak-style */
-const {addBookHandler, getAllBooksHandler} = require('./handler');
+const {addBookHandler, getAllBooksHandler, getBookByIdHandler} = require('./handler');
 
 const routes = [
   {
@@ -11,6 +12,11 @@ const routes = [
     method: 'GET',
     path: '/books',
     handler: getAllBooksHandler,
+  },
+  {
+    method: 'GET',
+    path: '/books/{bookId}',
+    handler: getBookByIdHandler,
   },
 ];
 
