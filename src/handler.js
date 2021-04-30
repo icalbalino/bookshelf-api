@@ -71,25 +71,21 @@ const addBookHandler = (request, h) => {
   return response;
 };
 
-const getAllBooksHandler = () => ({
-//     if (books == null) {
-//         status: 'success',
-//         data: {
-//             books: [],
-//         }
-//     }
-//   status: 'success',
-//   data: {
-//     books: [
-//       {
-//         id: books.id,
-//         name: books.name,
-//         publisher: books.publisher,
-//       },
 
-  //     ],
-  //   },
+const getAllBooksHandler = (request, h) => {
+  const response = h.response({
+    status: 'success',
+    data: {
+      books: books.map((book) => ({
+        id: book.id,
+        name: book.name,
+        publisher: book.publisher,
+      })),
+    },
+  });
 
-});
+  response.code(200);
+  return response;
+};
 
 module.exports = {addBookHandler, getAllBooksHandler};
